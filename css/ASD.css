@@ -1,4 +1,9 @@
 h1{
-    color: brown;
+    color: blueviolet;
     font-size: 100px;
+}
+
+h2{
+    color: darkorange;
+    font-size: 200px;
 }
