@@ -1,0 +1,310 @@
+/*! PARA LA ADECUADA LECTURA DE ESTE CODIGO, SE RECOMIENDA LA INSTALACION DE LA EXTENSION DE; Better Comments, TODO Highlight  */
+/* Better Comments marca colores, TODO Highlight resalta TODO'S o FIXME */
+/*
+Vínculo de VS Marketplace Better coments: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments 
+Vínculo de VS Marketplace TODO Highlight: https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
+ */
+/*! General:principalmente el Header y el footer  */
+*{
+    margin: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+
+/*? Header */
+header{
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-color: bisque; TODO: QUIARLO DESPUES, COLOR DE PRUEBA PARA GUIARME */
+}
+/** Parte1; Logo */
+.logo{ 
+    width: 35%; /*esto es para llenar la cantidad de espacion en el header*/
+    color: black;
+}
+.logo img{
+    height: 100px;
+    margin: 15px;
+    transform: translateY(15%) translateX(90%);
+}
+.logo h2{
+    font-size: 30px;
+    transform: translateY(15%) translateX(7%);
+}
+/** Parte 2; Busqueda y lupa */
+.busqueda{
+    width: 35%;
+}
+/* FIXME: en vez de colocar (%), buscar como se pone dependiendo de el tamaño de la pagina (no recuerdo las letras) */
+/* estos (%) estan por el momento, son las 11pm wey, no mames */
+.busqueda input{
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    width: 57%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    transform: translateY(120%) translateX(0%);
+}
+/*!Esto elimina la (X) del type="Search"  */
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    content: URL();
+    cursor: pointer;
+}   
+.busqueda input[type="search"]{
+    border-radius: 60px;
+    text-align: center;
+    border: none;
+    color: #000000;
+    font-size: 30px;
+    width: 80%; 
+    height: 50px;
+    margin: auto; 
+}
+.busqueda button{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 25px;
+    transform: translateY(130%) translateX(-150%);
+}
+.busqueda button[type="submit"]:hover{
+    background-color: transparent;
+    border-radius: 200px;
+    box-shadow: 10px 6px 56px 0px rgba(0,0,0,0.3);
+}
+/** Parte 3; Favoritos, carrito de compra y login */
+.principales{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principales i{
+    font-size: 35px;
+    margin: 15px;
+    
+    color: #000000;
+}
+/*! Dropdown del usuario: comentado desde la linea 34 to 42 */
+.dropdown {
+    display: inline-block;
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+/*? Barra de navegacion */
+nav{
+    background-color: #D9D9D9;
+}
+.nav-item a:link{ /*Color que se muestra de primeras el link*/
+    color: #000000;
+    text-decoration: none;
+}
+.nav-item a:visited{/*Link visitado*/
+    color: #000000;
+    text-decoration: none;
+}
+.nav-item a:hover{/*Cuando se pasa el cursor por encima del link*/
+    color: #00A4BD;
+    text-decoration: none;
+}
+.nav-item a:active{ /*Cuando se selecciona el link, */
+    color: #276cdb;
+    text-decoration: underline;
+}
+/*? Informacion sobre Lavadoras Felices */
+section {
+    background-color: #1D1B20;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    list-style:none;
+}
+section p{
+    color: #ffffffac;
+}
+section p:hover{
+    color: #405074ca;
+}
+section a:link{
+    color: #ffffffac;
+    text-decoration: none;
+}
+section a:visited{/*Link visitado*/
+    color: #ffffffac;
+    text-decoration: none;
+}
+section a:hover{/*Cuando se pasa el cursor por encima del link*/
+    color: #405074ca;
+}
+section a:active{ /*Cuando se selecciona el link, */
+    color: #276cdb;
+    text-decoration: underline;
+}
+.imagenes_pago{ /*Aca toca buscar un video donde se acomodan las imagenes iguales*/
+    height: 60px;
+    background-color: #D9D9D9; 
+}
+/*? Info de la superintendecias */
+.industrias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #D9D9D9;
+    justify-content: space-evenly; 
+}
+.industrias img{
+    height: 60px;
+}
+.separacion{ 
+    background-color: #1D1B20;
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.separacion h2{
+    margin-bottom: 0px;
+}
+/*? Footer */
+footer .logo{
+    background-color: #1D1B20;
+    color: #FFFFFF;
+    display: block;
+    width: 100%; 
+    text-align: center;
+}
+footer .logo img{
+    transform: translateY(0%) translateX(0%);
+    margin: 30px;
+}
+footer .logo h2{
+    width: 20%;
+    transform: translateX(200%);
+    margin-bottom: 10px;
+}
+footer .logo .redes{
+    width: 7%;
+    display: flex;
+    justify-content: space-between;    
+    transform: translateX(658%);
+    /* margin-bottom: 10px; */
+}
+footer .logo p{
+    margin: 0px;
+}
+/*? Esto es el WhatsApp de la empresa */
+.float{
+    position: fixed;
+    background-color: #25d366;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    font-size: 35px;
+    color: #000000;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.float a:link{
+    color: #000000;
+    text-decoration: none;
+}
+.float a:visited{/*Link visitado*/
+    color: #000000;
+    text-decoration: none;
+}
+.float:hover{
+    color: #25d366;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+.float a:hover{/*Cuando se pasa el cursor por encima del link*/
+    border-radius: 50px;
+    color: #25d366;
+    background-color: #FFFFFF;
+}
+
+/*!HTML, desde acá abajo se comienza las diferentes paginas*/
+/** Index */
+/*TODO: TERMINAR ESTOS DOS */
+/*? Ciculos */
+/*? Servicios  */
+
+
+/*? Mas vendidas  */
+.mas_vendidas{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 10px;
+    background-color: #D9D9D9;
+}
+.card{
+    border: 1px black solid;
+    margin: 5px;
+}
+.card-text{
+    color: #000000;
+}
+.texto_mas{
+    width: 22%;
+    color: #000000;
+    text-align: center;
+    border: 1px black solid;
+}
+.texto_mas h4{
+    font-size: 25px;
+}
+.cart-favorites{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.btn-btn-primary{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: #0D6EFD;
+    margin: auto;
+    font-size: 20px;
+}
+.btn-btn-secondary{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: rgb(203, 21, 21);
+    margin: auto;
+    font-size: 20px;
+}
