@@ -1,0 +1,81 @@
+/*!HTML, desde acá abajo se comienza las diferentes paginas*/
+
+*{
+    margin: 0;
+}
+body{
+    background-color: white;
+}
+
+/** Index */
+/*? Ciculos */
+.circulos_Lavadoras{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.circulos_Lavadoras img{
+    border-radius: 500px;
+}
+/*? Servicios  */
+.servicios{
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    margin: 10px;
+}
+/*? Mas vendidas  */
+.mas_vendidas{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 10px;
+    background-color: #D9D9D9;
+}
+.card{
+    border: 1px black solid;
+    margin: 5px;
+}
+.card-text{
+    color: #000000;
+}
+.texto_mas{
+    width: 22%;
+    color: #000000;
+    text-align: center;
+    border: 1px rgba(0, 0, 0, 0.219) solid;
+}
+.texto_mas h4{
+    font-size: 25px;
+}
+.cart-favorites{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.btn-btn-primary{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: #0D6EFD;
+    margin: auto;
+    font-size: 20px;
+}
+.btn-btn-secondary{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: rgb(203, 21, 21);
+    margin: auto;
+    font-size: 20px;
+}
+marquee img{
+    margin: 5px;
+    
+}
+#negros{
+    filter: grayscale(100);
+}

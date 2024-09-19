@@ -9,14 +9,11 @@ Vínculo de VS Marketplace TODO Highlight: https://marketplace.visualstudio.com/
     margin: 0;
 }
 body{
-    background-color: antiquewhite;
+    background-color: white;
 }
-
 /*? Header */
 header{
     display: flex;
-    /* justify-content: space-between; */
-    /* background-color: bisque; TODO: QUIARLO DESPUES, COLOR DE PRUEBA PARA GUIARME */
 }
 /** Parte1; Logo */
 .logo{ 
@@ -72,7 +69,7 @@ input::-webkit-search-cancel-button {
 .busqueda button[type="submit"]:hover{
     background-color: transparent;
     border-radius: 200px;
-    box-shadow: 10px 6px 56px 0px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
 }
 /** Parte 3; Favoritos, carrito de compra y login */
 .principales{
@@ -84,10 +81,9 @@ input::-webkit-search-cancel-button {
 .principales i{
     font-size: 35px;
     margin: 15px;
-    
     color: #000000;
 }
-/*! Dropdown del usuario: comentado desde la linea 34 to 42 */
+/*? Dropdown del usuario: comentado desde la linea 34 to 42 */
 .dropdown {
     display: inline-block;
     position: relative;
@@ -127,7 +123,7 @@ nav{
     text-decoration: none;
 }
 .nav-item a:hover{/*Cuando se pasa el cursor por encima del link*/
-    color: #00A4BD;
+    color: #00c6f8;
     text-decoration: none;
 }
 .nav-item a:active{ /*Cuando se selecciona el link, */
@@ -252,59 +248,3 @@ footer .logo p{
     background-color: #FFFFFF;
 }
 
-/*!HTML, desde acá abajo se comienza las diferentes paginas*/
-/** Index */
-/*TODO: TERMINAR ESTOS DOS */
-/*? Ciculos */
-/*? Servicios  */
-
-
-/*? Mas vendidas  */
-.mas_vendidas{
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    margin: 10px;
-    background-color: #D9D9D9;
-}
-.card{
-    border: 1px black solid;
-    margin: 5px;
-}
-.card-text{
-    color: #000000;
-}
-.texto_mas{
-    width: 22%;
-    color: #000000;
-    text-align: center;
-    border: 1px black solid;
-}
-.texto_mas h4{
-    font-size: 25px;
-}
-.cart-favorites{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-.btn-btn-primary{
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-color: #0D6EFD;
-    margin: auto;
-    font-size: 20px;
-}
-.btn-btn-secondary{
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-color: rgb(203, 21, 21);
-    margin: auto;
-    font-size: 20px;
-}
