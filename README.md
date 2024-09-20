@@ -11,7 +11,6 @@ Se recomienda la instalacion de las siguentes extenciones: Better Comments, TODO
 
 <em> Better Comments marca colores, TODO Highlight resalta TODO'S o FIXME </em>
 
-Vínculo de VS Marketplace Better coments: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments 
-Vínculo de VS Marketplace TODO Highlight: https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
+Vínculo de VS Marketplace Better coments: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments Vínculo de VS Marketplace TODO Highlight: https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
 
 <table><tr><td> P.S. Jaider es un estupido en toda regla. </td></tr></table>
