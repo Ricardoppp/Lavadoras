@@ -4,11 +4,9 @@
     box-sizing: border-box;
     
   }
-  
   body {
-    background-image: url(/src/Images/Fondo_Negro_5.webp);
+    background-image: url(/Lavadoras/Images/Fondo_Negro_5.webp);
   }
-  
   .form-register {
     width: 400px;
     background: #adb0b2;

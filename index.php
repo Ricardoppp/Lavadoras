@@ -1,3 +1,7 @@
+<?php
+    // Jaider es un ESTUPIDO, se tenia que decir y se dijo
+    // Gracias por su atencion!!
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +41,7 @@
         <div class="principales"> <!--  3 iconos en orden desendente (favoritos, carro y perfil ) -->
             <a href="favoritos.html"><i class="bi bi-heart"></i></a>
             <a href="carrito.html"><i class="bi bi-cart"></i></a>
-            <a href="register.html"><i class="bi bi-person-circle"></i></a>
+            <a href="login.html"><i class="bi bi-person-circle"></i></a>
             <!-- TODO: Esta linea de codigo de abajo muestra un menu desplegable  (NO TOCAR, TRABAJAR DESPUES) -->
             <!-- <div class="dropdown">    
                 <button><i class="bi bi-person-circle"></i></button>
