@@ -4,6 +4,16 @@ body {
     padding: 0;
     background-color: #f0f0f0;
 }
+/*? Imagenes de logos y resultados de filtro  */
+.filtro-logo{
+    display: flex;
+    margin: 15px;
+}
+.selector{
+    margin-left: 75%;
+}
+
+/*? Parte de la la busqueda de lavadoras o secadoras  */
 .container {
     display: flex;
     max-width: 1200px;
