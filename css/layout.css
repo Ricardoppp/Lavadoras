@@ -1,6 +1,11 @@
 *{
     margin: 0;
 }
+h1, h2, h3, h4, h5, a, input, p{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 body{
     background-color: white;
 }
@@ -125,31 +130,31 @@ nav{
 }
 /*? Informacion sobre Lavadoras Felices */
 section {
-    background-color: #1D1B20;
-    color: #FFFFFF;
+    background-color: #D9D9D9;
+    color: #000000;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 15px;
     list-style:none;
 }
-section p{
-    color: #ffffffac;
+.toda_info p{
+    color: #000000;
 }
-section p:hover{
+.toda_info p:hover{
     color: #405074ca;
 }
-section a:link{
-    color: #ffffffac;
+.toda_info a:link{
+    color: #000000;
     text-decoration: none;
 }
-section a:visited{/*Link visitado*/
-    color: #ffffffac;
+.toda_info a:visited{/*Link visitado*/
+    color: #000000;
     text-decoration: none;
 }
-section a:hover{/*Cuando se pasa el cursor por encima del link*/
+.toda_info a:hover{/*Cuando se pasa el cursor por encima del link*/
     color: #405074ca;
 }
-section a:active{ /*Cuando se selecciona el link, */
+.toda_info a:active{ /*Cuando se selecciona el link, */
     color: #276cdb;
     text-decoration: underline;
 }
@@ -170,25 +175,25 @@ section a:active{ /*Cuando se selecciona el link, */
     height: 60px;
 }
 .separacion{ 
-    background-color: #1D1B20;
+    background-color: #D9D9D9;
     text-align: center;
     font-size: 30px;
-    color: #FFFFFF;
+    color: #000000;
 }
 .separacion h2{
     margin-bottom: 0px;
 }
 /*? Footer */
 footer .logo{
-    background-color: #1D1B20;
-    color: #FFFFFF;
+    background-color: #D9D9D9;
+    color: #000000;
     display: block;
     width: 100%; 
     text-align: center;
 }
 footer .logo img{
     transform: translateY(0%) translateX(0%);
-    margin: 30px;
+    margin: 10px;
 }
 footer .logo h2{
     width: 20%;
@@ -204,6 +209,7 @@ footer .logo .redes{
 }
 footer .logo p{
     margin: 0px;
+    font-size: 10px;
 }
 /*? Esto es el WhatsApp de la empresa */
 .float{

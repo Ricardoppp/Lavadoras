@@ -6,7 +6,6 @@
 body{
     background-color: white;
 }
-
 /** Index */
 /*? Ciculos */
 .circulos_Lavadoras{
@@ -21,7 +20,12 @@ body{
 /*? Servicios  */
 .servicios{
     border: 1px solid rgba(0, 0, 0, 0.219);
-    margin: 10px;
+    
+}
+.servicios p{
+    margin: 40px;
+    font-size: 30px;
+    text-align: center;
 }
 /*? Mas vendidas  */
 .mas_vendidas{
