@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/register.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/Images/FAVICONS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/FAVICONS/favicon-32x32.png">
     <section>
         <a href="index.html">
-            <img src="/Images/home.png" alt="logo" width="10x10">
+            <img src="images/pngwing.com (4).png" alt="logo" width="30x30" rigth>
         </a>
-       </section> 
+    </section> 
 </head>
 <body>
     
     
         <section class="form-register">
-        
-            <img src="Images/Fondo_Negro_5.webp" alt="" width="70px"> 
-            <img class="imagenes" src="Images/este.png" alt="" width="50px">
+            
+            <img src="images/Fondo_Negro_5.webp" alt="" width="70px"> 
+            <img class="imagenes" src="images/este.png" alt="" width="50px">
             <H1> Login</H1>
-            <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su email" required>
-            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña" required> 
-            <input class="botons" type="submit" value="Login">
+            <section>
+                <form action="php/iniciarsesion.php" method="post">
+                <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña" required> 
+                <input class="botons" type="submit" value="Login">
+                </form>
+            </section>
             <p><a href="register.html">Registrate</a></p>
             <p><a href="register.html">¿Olvidaste tu contraseña?</a></p>
 
