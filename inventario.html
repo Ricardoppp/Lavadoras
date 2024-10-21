@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="css/inventario.css">
+    <section>
+        <a href="index.html">
+            <img src="images/pngwing.com (4).png" alt="logo" width="30x30" rigth>
+        </a>
+       
+    </section> 
+    <link rel="icon" type="image/png" sizes="32x32" href="images/FAVICONS/favicon-32x32.png">
+</head>
+<body>
+
+    <header>
+        <h1>Administrador de Inventario</h1>
+     </header>
+ <br>
+ <h1>Crear Nuevo Productos</h1>
+     <main class="container">
+         <section class="actions">
+             <form action="php/nuevoproducto.php" method="post">
+                 <input class="controls" type="text" name="nombre_producto" id="nombre" placeholder="Ingrese el nombre del producto" required>
+                 <input class="controls" type="text" name="seriales" id="serial" placeholder="Ingrese el serial del producto" required>
+                 <input class="controls" type="number" name="cantidad" id="cantidad" placeholder="Ingrese la cantidad de producto" required>      
+                 <input class="controls" type="text" name="color" id="color" placeholder="Ingrese el color del producto" required>
+                 <input class="btn-primary" type="submit" value="Añadir">
+             </form>
+         </section>
+     </main>
+ <br>
+ <h1>Eliminar Producto</h1>
+     <main class="container">
+         <section class="actions">
+             <form action="php/eliminaruser.php" method="post">
+                 <input class="controls" type="text" name="seriales" id="seriales" placeholder="Ingrese el serial del producto" required>
+                 <input class="btn-secondary" type="submit" value="Eliminar">
+             </form>
+         </section>
+     </main>
+ 
+ </body>
+ </html>
+</body>
+</html>

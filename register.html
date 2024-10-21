@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="css/register.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/FAVICONS/favicon-32x32.png">
+    <section>
+        <a href="index.html">
+            <img src="images/pngwing.com (4).png" alt="logo" width="30x30" rigth>
+        </a>
+    </section> 
 </head>
 <body>
-    
-        <section class="form-register">
-        
-             <img src="Images/Fondo_Negro_5.webp" alt="" width="70px"> 
+    <section class="form-register">
+        <form action="php/nuevosuser.php" method="post">
+            <img src="images/Fondo_Negro_5.webp" alt="" width="70px"> 
             <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
             <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
-            <input class="controls" type="text" name="# celular" id="celular" placeholder="Ingrese su numero de telefono" required>      
+            <input class="controls" type="text" name="celular" id="celular" placeholder="Ingrese su número de teléfono" required>      
             <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su email" required>
             <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña" required> 
-            <input type="checkbox">  Estoy de acuerdo con <a href="#">Terminos y Condiciones</a>
+            <input type="hidden" type="number" name="tpuser" value="3">
             <input class="botons" type="submit" value="Register">
-            <p><a href="login.html">¿Ya tengo Cuenta?</a></p>
-            
-        </section>
-
-    
+        </form>
+            <p><a href="login2.0.html">¿Ya tengo Cuenta?</a></p>
+    </section>
 </body>
 </html>
