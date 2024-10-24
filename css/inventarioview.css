@@ -1,0 +1,217 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 10px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin:  auto;
+    padding: auto;
+}
+
+
+header {
+    background-color: #90c31a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+header img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+body h1{
+  margin: 30px;
+}
+
+/* Botones de acción */
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary {
+    width: 12%;
+    height: 35%;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.btn-secondary {
+    width: 120px;
+    height: 40px;
+    left: -920px;
+    background-color: #008CBA;
+    color: white;
+  
+    
+}
+
+.btn-secondary:hover {
+    background-color: #007bb5;
+   
+}
+.form-register {
+    width: 400px;
+    background: #4d4e4f;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Arial';
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 30%;
+    background: #b9c7e3;
+    padding: auto;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #0b372e;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    
+  }
+
+  .deletes{
+    width: 100%;
+    height: 20px;
+    background: #b9c7e3;
+    position: relative;
+    left: -800px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #0b372e;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+/* Sección principal */
+main {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin: 20px 0;
+}
+/* Estilo para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Eliminar espacios entre bordes */
+  margin: 20px 0; /* Margen alrededor de la tabla */
+  font-size: 16px; /* Tamaño de fuente */
+  background-color: #f9f9f9; /* Color de fondo general de la tabla */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para celdas de encabezado */
+th {
+  background-color: #003366; /* Azul oscuro para el encabezado */
+  color: #ffffff; /* Texto en blanco */
+  padding: 12px 15px; /* Espaciado interno */
+  text-align: left; /* Alinear texto a la izquierda */
+  font: optional;
+  font-size: 16px;
+}
+
+/* Estilo para celdas de datos */
+td {
+  background-color: #e6f0ff00; /* Azul claro para las celdas */
+  color: #333; /* Texto oscuro para contraste */
+  padding: 12px 15px; /* Espaciado interno */
+  border: 0  #ddd; /* Bordes finos y grises */
+}
+
+/* Fila alternada con diferente color de fondo */
+tr:nth-child(even) td {
+  background-color: #f1f8ff; /* Color claro para las filas pares */
+}
+
+/* Efecto hover para las filas */
+tr:hover td {
+  background-color: #cce5ff; /* Color más claro al pasar el ratón */
+}
+
+table {
+  border-radius: 8px; 
+  overflow: hidden; 
+}
+input {
+  border: none; /* Elimina el borde */
+  outline: none;
+  width: 100%; /* Establece el ancho en píxeles
+  background-color: transparent; /* Fondo transparente */
+  color: #333;
+  padding: 10px; 
+  font-size: 16px;
+  border-radius: 4px; 
+}

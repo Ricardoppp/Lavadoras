@@ -1,11 +1,6 @@
 *{
     margin: 0;
 }
-h1, h2, h3, h4, h5, a, input, p{
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
 body{
     background-color: white;
 }
@@ -130,31 +125,31 @@ nav{
 }
 /*? Informacion sobre Lavadoras Felices */
 section {
-    background-color: #D9D9D9;
-    color: #000000;
+    background-color: #1D1B20;
+    color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 20px;
     list-style:none;
 }
-.toda_info p{
-    color: #000000;
+section p{
+    color: #ffffffac;
 }
-.toda_info p:hover{
+section p:hover{
     color: #405074ca;
 }
-.toda_info a:link{
-    color: #000000;
+section a:link{
+    color: #ffffffac;
     text-decoration: none;
 }
-.toda_info a:visited{/*Link visitado*/
-    color: #000000;
+section a:visited{/*Link visitado*/
+    color: #ffffffac;
     text-decoration: none;
 }
-.toda_info a:hover{/*Cuando se pasa el cursor por encima del link*/
+section a:hover{/*Cuando se pasa el cursor por encima del link*/
     color: #405074ca;
 }
-.toda_info a:active{ /*Cuando se selecciona el link, */
+section a:active{ /*Cuando se selecciona el link, */
     color: #276cdb;
     text-decoration: underline;
 }
@@ -175,25 +170,25 @@ section {
     height: 60px;
 }
 .separacion{ 
-    background-color: #D9D9D9;
+    background-color: #1D1B20;
     text-align: center;
     font-size: 30px;
-    color: #000000;
+    color: #FFFFFF;
 }
 .separacion h2{
     margin-bottom: 0px;
 }
 /*? Footer */
 footer .logo{
-    background-color: #D9D9D9;
-    color: #000000;
+    background-color: #1D1B20;
+    color: #FFFFFF;
     display: block;
     width: 100%; 
     text-align: center;
 }
 footer .logo img{
     transform: translateY(0%) translateX(0%);
-    margin: 10px;
+    margin: 30px;
 }
 footer .logo h2{
     width: 20%;
@@ -209,7 +204,6 @@ footer .logo .redes{
 }
 footer .logo p{
     margin: 0px;
-    font-size: 10px;
 }
 /*? Esto es el WhatsApp de la empresa */
 .float{
