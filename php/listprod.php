@@ -3,18 +3,18 @@
 
 include 'validar.php';  // Asegúrate de que este archivo conecta correctamente a la base de datos
 
-$sql = "SELECT * FROM usuarios";
+$sql = "SELECT * FROM productos";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     // Crear la tabla de encabezado
     echo "<table border='1'>
             <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Email</th>
-                <th>Tipo de Usuario</th>
-                <th>Numero de Telefono</th>
+                <th>Marca</th>
+                <th>Tipo</th>
+                <th>Serial</th>
+                <th>Color</th>
+                <th>Cantidad</th>
             </tr>";
     
     // output de cada fila

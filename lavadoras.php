@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Esto trae los iconos de Bootstrap -->
     <!-- Titulo de la pagina -->
     <title>Lavadoras Felices</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="Images/FAVICONS/favicon-32x32.png"><!-- Imagen al lado del Titulo --><!-- Imagen al lado del Titulo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/FAVICONS/favicon-32x32.png"><!-- Imagen al lado del Titulo -->
 </head>
 <body>
     <!-- Script para el correcto funcionamieto de Bootstrap -->
@@ -38,15 +37,6 @@
             <a href="favoritos.html"><i class="bi bi-heart"></i></a>
             <a href="carrito.html"><i class="bi bi-cart"></i></a>
             <a href="login2.0.php"><i class="bi bi-person-circle"></i></a>
-            <!-- TODO: Ester se tiene que arreglar ya que se va a colocar primero login y despues  opciones etc) -->
-            <!-- <div class="dropdown">   
-                <button><i class="bi bi-person-circle"></i></button>
-                <div class="dropdown-content">
-                <a href="https://blog.hubspot.com/">Blog</a>
-                <a href="https://academy.hubspot.com/">Academy</a>
-                <a href="https://www.youtube.com/user/hubspot">YouTube</a>
-                </div>
-            </div> -->
         </div>
         
     </header>
@@ -78,75 +68,76 @@
         </ul>
     </nav>
 
+
     <div class="container">
         <div class="filters">
             <h3>Filtros</h3>
             <div>
-                <h4>Eco Renueva</h4>
-                <label><input type="checkbox"> Centros de lavados</label><br>
+                <h4>Marca</h4>
+                <label><input type="checkbox"> Samsung</label><br>
+                <label><input type="checkbox"> LG</label>
+                <label><input type="checkbox"> Whirpool</label>
+                <label><input type="checkbox"> Mabe</label>
+
             </div>
             <div>
                 <h4>Capacidad</h4>
-                <label><input type="checkbox"> 50kg-60kg</label><br>
-                <label><input type="checkbox"> 70kg-80kg</label><br>
-                <label><input type="checkbox"> 110kg-120kg</label>
+                <label><input type="checkbox"> 6-10kg</label><br>
+                <label><input type="checkbox"> 11-15kg</label><br>
+                <label><input type="checkbox"> 16-20kg</label>
             </div>
         </div>
-    
+        
         <div class="products">
+            <!-- Producto 1 -->
             <div class="product">
-                <div class="product-image"></div>
+                <div class="product-image" style="background-image: url('Images/lavadora1.jpg');"></div>
                 <div class="product-info">
-                    <h2>Centro de lavado Samsung Duo™, 55Kg</h2>
-                    <p>Color: Blanco</p>
-                    <p>Ahorra espacio y cuenta con lavado y secado en un solo equipo.</p>
-                    <div class="product-price">$13.999.900</div>
-                    <a href="#" class="button">Agregar al carrito</a>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-image"></div>
-                <div class="product-info">
-                    <h2>Centro de lavado LG WashTower™, 70Kg</h2>
+                    <h2>Lavadora Secadora Bespoke AI Laundry Combo™, 26Kg</h2>
                     <p>Color: Gris</p>
-                    <p>Lavado y secado superior con ahorro de espacio. 10 años de garantía en el motor.</p>
-                    <div class="product-price">$18.299.900</div>
+                    <p>2 en 1 - Lava y seca. Ahorra espacio, tiempo y energía.</p>
+                    <div class="product-price">$ 8.999.900</div>
+                    <a href="#" class="button">Más información</a>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="product">
+                <div class="product-image" style="background-image: url('Images/lavadora2.jpg');"></div>
+                <div class="product-info">
+                    <h2>WA90CG4240BVCO Lavadora con Dual Storm™, 9kg</h2>
+                    <p>Color: Gris</p>
+                    <p>Digital Inverter - Ahorro de energía & 20 años de garantía en el motor.</p>
+                    <div class="product-price">$ 1.399.900</div>
                     <a href="#" class="button">Agregar al carrito</a>
                 </div>
             </div>
+            
+            <!-- Producto 3 -->
             <div class="product">
-                <div class="product-image"></div>
+                <div class="product-image" style="background-image: url('Images/lavadora3.jpg');"></div>
                 <div class="product-info">
-                    <h2>Centro de lavado Whirlpool Supreme, 60Kg</h2>
-                    <p>Color: Plata</p>
-                    <p>Lavado y secado de gran capacidad en una estructura vertical y compacta.</p>
-                    <div class="product-price">$15.799.900</div>
-                    <a href="#" class="button">Agregar al carrito</a>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-image"></div>
-                <div class="product-info">
-                    <h2>Centro de lavado Electrolux Compacta, 65Kg</h2>
-                    <p>Color: Negro</p>
-                    <p>Compacto, silencioso y de bajo consumo energético.</p>
-                    <div class="product-price">$14.499.900</div>
-                    <a href="#" class="button">Agregar al carrito</a>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-image"></div>
-                <div class="product-info">
-                    <h2>Centro de lavado Midea Duo Smart, 75Kg</h2>
+                    <h2>Lavadora LG TWINWash™ con TurboWash3D™, 15kg</h2>
                     <p>Color: Blanco</p>
-                    <p>Con conectividad inteligente y control remoto desde el móvil.</p>
-                    <div class="product-price">$19.999.900</div>
+                    <p>TurboWash3D™ - Ahorra agua y tiempo. 10 años de garantía en el motor Inverter Direct Drive.</p>
+                    <div class="product-price">$ 2.499.900</div>
+                    <a href="#" class="button">Agregar al carrito</a>
+                </div>
+            </div>
+            
+            <!-- Producto 4 -->
+            <div class="product">
+                <div class="product-image" style="background-image: url('Images/lavadora4.jpg');"></div>
+                <div class="product-info">
+                    <h2>Lavadora Samsung AddWash™ con EcoBubble™, 22kg</h2>
+                    <p>Color: Negro</p>
+                    <p>EcoBubble™ y tecnología AddWash™ para una limpieza eficiente. 20 años de garantía en el motor Digital Inverter.</p>
+                    <div class="product-price">$ 3.199.900</div>
                     <a href="#" class="button">Agregar al carrito</a>
                 </div>
             </div>
         </div>
     </div>
-    
 
     <!--* Whatsapp de la empresa y/o contacto directo -->
     <a href="#" class="float" target="_blank"><i class="bi bi-whatsapp"></i></a>
@@ -211,7 +202,7 @@
 
     <footer>
         <div class="logo">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="Images/este.png" alt="logo">
             </a>
             <h2>Lavadoras Felices</h2>

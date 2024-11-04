@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'validar.php';
 
 $login = $_POST['email'];
@@ -16,6 +17,10 @@ if (mysqli_num_rows($result) > 0) {
         // Limpiar y verificar el valor de tpuser
         $tipo_usuario = trim($row["tipo_usuario"]);
         echo "Valor de tipo_usuario: " . $tipo_usuario . "<br>";
+            
+        $_SESSION['nombre'] = $row["nombre"];
+        $_SESSION['apellido'] = $row["apellido"];
+        $_SESSION['tipo_usuario'] = $row["tipo_usuario"];
           
           switch ($tipo_usuario)
           {
@@ -24,11 +29,11 @@ if (mysqli_num_rows($result) > 0) {
             break;
   
             case "2": 
-                header ("Location: ../inventario.html");
+                header ("Location: ../inventario.php");
             break;
 
             case "3": 
-                header("Location: ../index.html");
+                header("Location: ../index.php");
             ;
           }
     }

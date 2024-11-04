@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+// Verificar si el usuario ha iniciado sesión
+if (!isset($_SESSION['nombre']) || !isset($_SESSION['apellido']) || !isset($_SESSION['tipo_usuario'])) {
+    header("Location: login2.0.php"); // Redirigir al login si no está autenticado
+    exit();
+}
+
+// Obtener los datos del usuario de la sesión
+$nombre = $_SESSION['nombre'];
+$apellido = $_SESSION['apellido'];
+$tipo_usuario = $_SESSION['tipo_usuario'];
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,11 +21,14 @@
     <link rel="stylesheet" href="css/superadminview.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/FAVICONS/favicon-32x32.png">
     <section>
-        <a href="index.html" style="display: inline;">
+        <a href="index.php" style="display: inline;">
             <img src="images/pngwing.com (4).png" alt="logo" width="30px">
         </a>
         <a href="inventario.php" style="display: inline;">
             <img src="images/pngwing.com (5).png" alt="inventarios" width="30px">
+         <a href="php/logout.php">
+            <img src="images/Logout_37127.png" alt="cerrar" width="30px">      
+        </a>
         </a>
        
     </section>
@@ -47,14 +64,7 @@
             </form>
         </section>
     </main>
-    <br>
 
-    <h1>Actualizar Usuarios</h1>
-    <main class="container">
-        <section class="actions">
-            <form action=""></form>
-        </section>
-    </main>
     <br>
 
     <h1>Listar Usuarios</h1>
@@ -73,6 +83,8 @@
                         <th>Apellido</th>
                         <th>Email</th>
                         <th>Tipo de Usuario</th>
+                        <th>Numero de Telefono</th>
+                        <th>Editar</th>
                     </tr>
                     <?php
                     // output de cada fila
@@ -83,7 +95,18 @@
                             <td><input type='text' name='apellidoUsuario' id='apellidoUsuario' value="<?php echo $row['apellido']; ?> " readonly></td>
                             <td><input type='text' name='emailUsuario' id='emailUsuario' value="<?php echo $row['email']; ?>"readonly></td>
                             <td><input type='text' name='tipoUsuario' id='tipoUsuario' value="<?php echo $row['tipo_usuario']; ?>" readonly></td>
+                            <td><input type="text" name="celular" id="celular" value="<?php echo $row['telefono']; ?>" readonly ></td>
+                            <form action="php/edituser.php" method="post">
+                            <section class="user-list">
+                            <td >
+                            <input type="hidden" name="id_usuario" value="<?php echo $row['id_usuario']; ?>">
+                            <input type="submit" value="Editar" >
+                            </form>
+                            </td>
+                            </section>                  
+
                         </tr>
+                        
                     <?php
                     }
                     ?>

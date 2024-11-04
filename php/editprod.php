@@ -94,16 +94,13 @@
 include "validar.php";
 
 
-$id_usuario = $_POST["id_usuario"];
+$id = $_POST["id"];
 
 
-$sql = "SELECT * FROM usuarios WHERE id_usuario='$id_usuario' ";
+$sql = "SELECT * FROM productos WHERE id='$id' ";
 $result = mysqli_query($conn, $sql);
 
-if ($tipo_usuario === '-0') {
-  echo "Error: Tipo de usuario no válido.";
-  exit();  // Termina el script si el valor es inválido
-}
+
 
 if (mysqli_num_rows($result) > 0) {
   while($row = mysqli_fetch_assoc($result)) {
@@ -113,20 +110,18 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <main class="form-register">   
-        <form action="insertedituser.php" method="post">
+        <form action="inserteditprod.php" method="post">
             <h3>Nombre </h3>
-            <input class="controls" type='text' name='nombre' id='nombre' value="<?php echo $row['nombre']; ?>" required >
+            <input class="controls" type='text' name='marca' id='marca' value="<?php echo $row['marca']; ?>" required >
             <h3>Apellido </h3>
-            <input class="controls" type='text' name='apellido' id='apellido' value="<?php echo $row['apellido']; ?>" required >
+            <input class="controls" type='text' name='tipo' id='tipo' value="<?php echo $row['tipo']; ?>" required >
             <h3>Email</h3>
-            <input class="controls" type='text' name='email' id='email' value="<?php echo $row['email']; ?>" required >
+            <input class="controls" type='text' name='serial' id='serial' value="<?php echo $row['serial']; ?>" required >
             <h3>Tipo De Usuario</h3>
-            <input class="controls" type='text' name='tpuser' id='tpuser' value="<?php echo $row['tipo_usuario']; ?>" required >
+            <input class="controls" type='text' name='color' id='color' value="<?php echo $row['color']; ?>" required >
             <h3>Telefono del usuario</h3>
-            <input class="controls" type='text' name='celular' id='celular' value="<?php echo $row['telefono']; ?>" required >
-            <input class="controls" type='hidden' name='id_usuario' id='id_usuario' value="<?php echo $row["id_usuario"]; ?>" >
-            <h3>Cambiar contraseña</h3>
-            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese nueva contraseña (opcional)" >  
+            <input class="controls" type='text' name='cantidad' id='cantidad' value="<?php echo $row['cantidad']; ?>" required >
+            <input class="controls" type='hidden' name='id' id='id' value="<?php echo $row["id"]; ?>" >
             <input class="botons" type="submit" value="Actualizar">
           </form>
   </section>  

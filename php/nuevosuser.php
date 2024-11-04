@@ -7,14 +7,17 @@ $celular=$_POST['celular'];
 $email=$_POST['email'];
 $contraseña=$_POST['contraseña'];
 $tipo_usuario=$_POST['tpuser'];
+$contraseñaHasheada = password_hash($contraseña, PASSWORD_DEFAULT);
+
 
 
 
 $sql = "INSERT INTO usuarios (nombre, apellido, telefono, email, contraseña,tipo_usuario)
-VALUES ('$nombre', '$apellido', '$celular', '$email', '$contraseña','$tipo_usuario')";
+VALUES ('$nombre', '$apellido', '$celular', '$email', '$contraseñaHasheada','$tipo_usuario')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
+    header ("Location: ../login2.0.html");
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }

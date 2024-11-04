@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+// Verificar si el usuario ha iniciado sesión
+if (!isset($_SESSION['nombre']) || !isset($_SESSION['apellido']) || !isset($_SESSION['tipo_usuario'])) {
+    header("Location: login2.0.php"); // Redirigir al login si no está autenticado
+    exit();
+}
+
+// Obtener los datos del usuario de la sesión
+$nombre = $_SESSION['nombre'];
+$apellido = $_SESSION['apellido'];
+$tipo_usuario = $_SESSION['tipo_usuario'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +20,19 @@
     <title>Inventario</title>
     <link rel="stylesheet" href="css/inventarioview.css">
     <section>
-        <a href="index.html">
+        <a href="index.php">
             <img src="images/pngwing.com (4).png" alt="logo" width="30x30" rigth>
         </a>
-        <a href="login2.0.html" style="display: inline;">
+
+        <a href="login2.0.php" style="display: inline;">
             <img src="images/pngwing.com (6).png" alt="inventarios" width="30px">
         </a>
-       
+
+        <a href="php/logout.php">
+            <img src="images/Logout_37127.png" alt="cerrar" width="30px">      
+        </a>
     </section> 
-    <link rel="icon" type="image/png" sizes="32x32" href="images/FAVICONS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/FAVICONS/favicon-32x32.png"><!-- Imagen al lado del Titulo -->
 </head>
 <body>
 
@@ -64,6 +82,7 @@
                          <th>Serial</th>
                          <th>Color</th>
                          <th>Cantidad</th>
+                         <th>Editar</th>
                      
                      </tr>
                      <?php
@@ -77,6 +96,14 @@
                              <td><input type='text' name='serial' id='serial' value="<?php echo $row['serial']; ?>"readonly></td>
                              <td><input type='text' name='color' id='color' value="<?php echo $row['color']; ?>" readonly></td>
                              <td><input type='number' name='cantidad' id='cantidad' value="<?php echo $row['cantidad']; ?>" readonly></td>
+                             <form action="php/editprod.php" method="post">
+                            <section class="user-list">
+                            <td >
+                            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                            <input type="submit" value="Editar" >
+                            </form>
+                            </td>
+                            </section>     
                          </tr>
                      <?php
                      }
