@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,24 +11,27 @@
     <!-- Carpeta de CSS -->
     <link rel="stylesheet" href="css/layout.css"> <!-- Contiene el css del; Header, Navbar, whatsapp Informacion legal con las imagenes de medios de pago y Footer. Este es ya que va en la mayoria de HTML's creados  -->
     <link rel="stylesheet" href="css/indexxx.css"> <!-- Contiene el css de; los 3 circulos de las lavadoras, servicios, lavadoras mas vendidas, marcas que creen en nosotros(imagene que se mueven)  -->
+    <link rel="stylesheet" href="/Lavadoras/SASS/styles.sass">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css    "> <!-- Esto trae el JS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> <!-- Esto trae el JS de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Esto trae los iconos de Bootstrap -->
+
+
     <!-- Titulo de la pagina -->
     <title>Lavadoras Felices</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png"><!-- Imagen al lado del Titulo -->
 </head>
 <body>
     <!--? Script para el correcto funcionamieto de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--? Header, es la parte de arriba que contiene 3 partes; el logo con la imagen (parte izquierda), barra de busqueda (parte central) y los 3 iconos (favoritos, carrito de compra y perfil) -->
     <header>
         <div class="logo">  <!-- Imagen con el nombre de la empresa (Izquieda) -->
             <a href="index.html">
                 <img src="Images/este.png" alt="logo"  width="80px" height="150px">
             </a>
-            <h2>Lavadoras Felices</h2>
+            <h2>Lavadoras NO Felices</h2>
         </div>
         <div class="busqueda"> <!-- Barra de busqueda (centro)-->
             <input type="search" class="buscar">
@@ -82,6 +84,8 @@
         </ul>
     </nav>
 
+    -
+
     <!--? Slide de imagenes  -->
     <div class="slide-imagenes"> <!-- Esto crea el div para el slide -->
         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true"> <!--  Para que el slide se mueva-->
@@ -125,10 +129,10 @@
             <img src="Images/CENTROS_CICULO_MABE.png" alt="centro_circulo" height="350px" width="350px">
         </a>
     </div>
-    <!--? Servicios  -->
+    <!-- Servicios  -->
     <div class="servicios"> <!-- Esto crea un div con la informacion que brindara la pagina o la empresa -->
-         <h1 style="color: red;">SERVICIOS</h1>
-         <p>Ofrecemos una amplia gama de productos de alta calidad, que incluyen lavadoras, secadoras y centros de lavado de las mejores marcas del mercado, garantizando durabilidad y eficiencia en cada uso. Además, contamos con repuestos originales para asegurar el correcto funcionamiento y prolongar la vida útil de tus electrodomésticos. Nuestro equipo de expertos está listo para brindarte asesoría personalizada y ayudarte a encontrar el producto ideal para tus necesidades.También ofrecemos un servicio especializado de mantenimiento y reparación, respaldado por técnicos certificados y capacitados para trabajar con las marcas más reconocidas. Garantizamos un servicio rápido y eficaz para que tus electrodomésticos funcionen de manera óptima. ¡Confía en nosotros para mantener tu hogar funcionando al 100%!</p>
+        <h1 style="color: red;">SERVICIOS</h1>
+        <p>Ofrecemos una amplia gama de productos de alta calidad, que incluyen lavadoras, secadoras y centros de lavado de las mejores marcas del mercado, garantizando durabilidad y eficiencia en cada uso. Además, contamos con repuestos originales para asegurar el correcto funcionamiento y prolongar la vida útil de tus electrodomésticos. Nuestro equipo de expertos está listo para brindarte asesoría personalizada y ayudarte a encontrar el producto ideal para tus necesidades.También ofrecemos un servicio especializado de mantenimiento y reparación, respaldado por técnicos certificados y capacitados para trabajar con las marcas más reconocidas. Garantizamos un servicio rápido y eficaz para que tus electrodomésticos funcionen de manera óptima. ¡Confía en nosotros para mantener tu hogar funcionando al 100%!</p>
     </div>
 
     <br> <!--  Para separara un poco los div, no tiene importancia-->
@@ -199,7 +203,7 @@
         </div>
     </section>
 
-    <!--? Imagenes de marcas aliadas -->
+    <!-- Imagenes de marcas aliadas -->
     <div class="marcas"> <!-- Crea el div de las imagenes que confian en nostros (imagenes en gris que recorren la pagina de iquierda a derecha)-->
         <h1>Marcas que creen en Lavadoras Felices</h1>
         <marquee behavior="#" direction="left"> <!-- Etiqueta para crear el movimiento -->
